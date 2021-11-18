@@ -1,0 +1,92 @@
+html,
+		body {
+		  margin:64px;
+		  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+		    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+		    sans-serif;
+		  -webkit-font-smoothing: antialiased;
+		  -moz-osx-font-smoothing: grayscale;
+		  height: 100%;
+		  background-color: hsl(0, 0%, 22%);
+		  color: hsla(0, 0%, 99%, 1);
+
+		  text-align: center
+		}
+		div {
+			color: inherit;
+			background-color: inherit;
+		}
+
+		a:link{
+			color: hsl(199, 100%, 36%);
+		}
+		a:visited{
+			color: hsl(293, 100%, 36%)
+		}
+
+		.social-icons{
+			font-size: 3em;
+		}
+
+		.social-icons>a:link, .social-icons>a:visited{
+			color: hsla(0, 0%, 99%, 1);
+		}
+
+		.social-icons>a:hover, .social-icons>a:active{
+			color: hsl(199, 100%, 36%);
+		}
+
+		.mypicture{
+			width: 200px;
+			height: auto;
+			border-radius: 50%;
+		}
+		h1{
+			margin-bottom: 0;
+		}
+		h2{
+			margin-top: 0;
+		}
+
+		.projectLogo{
+			width: 200px;
+			height: 200px;
+			border-radius: 5%;
+			opacity: 50%;
+		}
+
+		.projectLogo:hover, .projectLogo:active{
+			opacity: 100%;
+		}
+
+		.projects{
+			display: grid;
+			grid-template-columns: auto /*auto*/;
+			grid-column-gap: 64px;
+		}
+
+		.projectsHeader{
+			grid-column: span 2;
+		}
+
+		p{
+			width: 50%;
+			min-width: 300px;
+			max-width: 600px;
+			margin: auto;
+			text-align: left;
+			text-indent: 2em;
+		}
+
+		@media screen and (min-width: 800px){
+			.projects{
+				grid-template-columns: auto auto;
+			}
+			.proj1{
+				justify-self: end;
+			}
+			.proj2{
+				justify-self: start;
+			}
+
+		}
