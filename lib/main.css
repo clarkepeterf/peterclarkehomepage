@@ -70,12 +70,8 @@ html,
 		}
 
 		p{
-			width: 50%;
-			min-width: 300px;
-			max-width: 600px;
 			margin: auto;
-			text-align: left;
-			text-indent: 2em;
+			text-align: center;
 		}
 
 		@media screen and (min-width: 800px){
